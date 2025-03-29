@@ -10,7 +10,7 @@ return {
         ['core.dirman'] = {
           config = {
             workspaces = {
-              notes = '/var/home/nsalva/Notes',
+              default = '/var/home/nsalva/Notes',
             },
           },
         },
