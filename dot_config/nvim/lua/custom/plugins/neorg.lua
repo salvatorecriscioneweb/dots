@@ -50,12 +50,17 @@ return {
       {
         '<leader>ou',
         '<Plug>(neorg.qol.todo-items.todo.task-undone)',
-        desc = '[Org] List Toggle',
+        desc = '[Org] Toggle Undone',
       },
       {
         '<leader>oo',
         '<cmd>Neorg<CR>',
-        desc = '[Org] List Toggle',
+        desc = '[Org] Neorg',
+      },
+      {
+        '<leader>oj',
+        '<cmd>Neorg journal<CR>',
+        desc = '[Org] Neorg Journal',
       },
     },
   },
