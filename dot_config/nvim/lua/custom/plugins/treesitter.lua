@@ -3,7 +3,13 @@ return {
   {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
+    event = 'VeryLazy',
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
+    dependencies = {
+      {
+        'nvim-treesitter/nvim-treesitter-textobjects',
+      },
+    },
     opts = {
       ensure_installed = {
         'bash',
