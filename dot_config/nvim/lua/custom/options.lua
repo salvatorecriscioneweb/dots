@@ -44,3 +44,6 @@ o.cursorline = true
 o.scrolloff = 10
 o.confirm = true
 vim.opt.hlsearch = true
+
+vim.wo.foldlevel = 99
+vim.wo.conceallevel = 2

@@ -21,6 +21,7 @@ return {
         'heex',
         'eex',
         'norg',
+        'norg_meta',
       },
       auto_install = true,
       highlight = {
