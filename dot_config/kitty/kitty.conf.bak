@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_THEME
-# Modus Operandi Tinted
+# Mona Lisa
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -1243,7 +1243,7 @@ tab_bar_align center
 
 #: The foreground and background colors.
 
-# background_opacity 1.0
+# background_opacity 0.80
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1829,7 +1829,7 @@ tab_bar_align center
 #: }}}
 
 #: OS specific tweaks {{{
-# wayland_titlebar_color #282828
+wayland_titlebar_color #161616
 
 #: The color of the kitty window's titlebar on Wayland systems with
 #: client side window decorations such as GNOME. A value of system
