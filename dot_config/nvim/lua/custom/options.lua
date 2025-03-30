@@ -37,8 +37,8 @@ o.updatetime = 250
 o.timeoutlen = 300
 o.splitright = true
 o.splitbelow = true
-o.list = true
-o.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- o.list = true
+-- o.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 o.inccommand = 'split'
 o.cursorline = true
 o.scrolloff = 10

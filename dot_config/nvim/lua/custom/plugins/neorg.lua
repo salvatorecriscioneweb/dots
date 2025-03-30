@@ -15,6 +15,8 @@ return {
             default_workspace = 'notes',
           },
         },
+        ['core.export'] = {},
+        ['core.concealer'] = {},
         ['core.keybinds'] = {
           config = {
             default_keybinds = false,
@@ -35,12 +37,12 @@ return {
       },
       {
         '<leader>ot',
-        '<Plug>(neorg.pivot.list.invert)',
-        desc = '[Org] List Invert',
+        '<cmd>Neorg tangle current-file<CR>',
+        desc = '[Org] Tangle File',
       },
       {
         '<leader>oa',
-        '<Plug>(neorg.pivot.list.toggle)',
+        '<Plug>(neorg.qol.todo-items.todo.task-cycle)',
         desc = '[Org] List Toggle',
       },
       {
