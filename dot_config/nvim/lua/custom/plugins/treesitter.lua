@@ -4,12 +4,6 @@ return {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     event = 'VeryLazy',
-    main = 'nvim-treesitter.configs', -- Sets main module to use for opts
-    dependencies = {
-      {
-        'nvim-treesitter/nvim-treesitter-textobjects',
-      },
-    },
     opts = {
       ensure_installed = {
         'bash',
@@ -27,14 +21,20 @@ return {
         'heex',
         'eex',
         'norg',
-        'norg_meta',
+        'nix',
       },
       auto_install = true,
+
       highlight = {
         enable = true,
         additional_vim_regex_highlighting = { 'ruby' },
       },
       indent = { enable = true, disable = { 'ruby' } },
     },
+    config = function(_, opts)
+      require('nvim-treesitter.install').prefer_git = true
+      ---@diagnostic disable-next-line: missing-fields
+      require('nvim-treesitter.configs').setup(opts)
+    end,
   },
 }
