@@ -1,6 +1,6 @@
 set fish_greeting # Disable greeting
 
-fish_add_path /home/nsalva/.local/bin
+fish_add_path /home/ssalva/.local/bin
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
