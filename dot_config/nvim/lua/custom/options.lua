@@ -1,6 +1,11 @@
 local g = vim.g
 local o = vim.opt
 
+-- Lua initialization file
+g.moonflyTransparent = true
+-- Lua initialization file
+g.moonflyCursorColor = true
+
 -- disable some default providers
 g.loaded_node_provider = 0
 g.loaded_python3_provider = 0
